@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ @font-face {
+	font-family: BankGothic;
+	src: url(../fonts/BankGothic.ttf);
+}
+
+body {
+	background: #29292d;
+	max-width: 90vw;
+	margin: 0 auto;
+	color: white
+}
+
+h1 {
+	font-family: BankGothic;
+	text-transform: uppercase;
+	font-size: calc((100vw - 480px)/(1280 - 480) * (30 - 16) + 16px);	
+	color: white;
+	font-weight: lighter;
+	margin: 1rem 0;
+}
+main {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 2
+}
+.main_child {
+	max-width: 50%;
+	flex-grow: 1;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #242428;
+	border: 1px solid #707070;
+	padding: 0 0 15px 0;
+}
+
+img {
+	max-width: 100%;
+}
+.unit-data {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	font-family: BankGothic;
+	text-align: center;
+	width: 100%;
+	padding: 5px 0;
+	border-bottom: 1px solid #707070;
+	background: #101014;
+	color: white;
+	font-weight: normal;
+}
+h3 {
+	text-align: center;
+	font-family: BankGothic;
+	font-weight: normal;
+	margin: 1rem 0 0;
+	padding: 5px 0;
+	border-top: 1px solid #707070;
+	border-bottom: 1px solid #707070;
+	background: #101014;
+}
+
+.stars_selectors {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.gate_img {
+	background: url("../img/gate.png")no-repeat;
+	background-size: 400%;
+	height: 100px;
+	width: 100px;
+	margin: 3% 3%;
+}
+.envy.inactive {
+	background-position: 0 0;
+}
+.envy.active {
+	background-position: 33.333% 0;;
+}
+.sloth.inactive {
+	background-position: 66.667% 0;
+}
+.lust.inactive {
+	background-position: 0 33.333%;
+}
+.gluttony.inactive {
+	background-position: 66.667% 33.333%;
+}
+.wrath.inactive {
+	background-position: 0 66%;
+}
+.greed.inactive {
+	background-position: 66.667% 66%;
+}
+.pride.inactive {
+	background-position: 0 99%;
+}
+.gate-buttons{
+	width: 100px;
+}
+.gate-buttons p {
+    margin: 6.4rem 0.188rem 0;
+	cursor: pointer;
+	user-select: none;
+}
+.gate-buttons .disabled {
+	color: rgba(255,255,255,.5);
+	cursor: default;
+}
+.gate_stars {
+	position: relative;
+	
+}
+.one_star:after {
+	background: url(../img/kaigan-stars.png) no-repeat;
+	content: " ";
+    position: absolute;
+	bottom: -100px;
+	background-size: 100%;
+    left: 0;
+	right: 0;
+    margin: 0 auto;
+    width: 80px;
+	height: 25px;
+	background-position: 0 0;
+}
+.two_stars:after {
+	background: url(../img/kaigan-stars.png) no-repeat;
+	content: " ";
+    position: absolute;
+	bottom: -100px;
+	background-size: 100%;
+    left: 0;
+	right: 0;
+    margin: 0 auto;
+    width: 80px;
+	height: 25px;
+	background-position: 0 25%;
+}
+.three_stars:after {
+	background: url(../img/kaigan-stars.png) no-repeat;
+	content: " ";
+    position: absolute;
+	bottom: -100px;
+	background-size: 100%;
+    left: 0;
+	right: 0;
+    margin: 0 auto;
+    width: 80px;
+	height: 25px;
+	background-position: 0 50%;
+}
+.four_stars:after {
+	background: url(../img/kaigan-stars.png) no-repeat;
+	content: " ";
+    position: absolute;
+	bottom: -100px;
+	background-size: 100%;
+    left: 0;
+	right: 0;
+    margin: 0 auto;
+    width: 80px;
+	height: 25px;
+	background-position: 0 75%;
+}
+.five_stars:after {
+	background: url(../img/kaigan-stars.png) no-repeat;
+	content: " ";
+    position: absolute;
+	bottom: -100px;
+	background-size: 100%;
+    left: 0;
+	right: 0;
+    margin: 0 auto;
+    width: 80px;
+	height: 25px;
+	background-position: 0 100%;
+}

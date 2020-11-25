@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alchemist Count</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<meta charset="utf-8">
+	<script src="https://kit.fontawesome.com/2679019f78.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<h1>Alchemist Count</h1>
+	</header>
+
+	<main>
+		<div class="left_side main_child">
+			<img src="img/d-nyx.png">
+			<div class="test"></div>
+		</div>
+		<div class="right_side main_child">
+			<section>	
+				<h2 class="unit select">Dark Nyx</h2>
+				<div class="desired_stars">
+					<h3>How do you want to update your unit</h3>
+	
+					<div class="desired_stars_selectors stars_selectors">
+						<div class="gate_img desired envy inactive">
+							<div id='desired_envy' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"
+										onclick="gate_decrement('envy','true',0)"></p>
+									<p class="gate_increment fas fa-plus-circle" 
+										onclick="gate_increment('envy','true',0)"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right"></p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="gate_img desired sloth inactive">
+							<div id='desired_sloth' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"></p>
+									<p class="gate_increment fas fa-plus-circle disabled"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right disabled"></p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="gate_img desired lust inactive">
+							<div id='desired_lust' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"></p>
+									<p class="gate_increment fas fa-plus-circle disabled"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right disabled"></p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="gate_img desired gluttony inactive">
+							<div id='desired_gluttony' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"></p>
+									<p class="gate_increment fas fa-plus-circle disabled"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right disabled"></p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="gate_img desired wrath inactive">
+							<div id='desired_wrath' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"></p>
+									<p class="gate_increment fas fa-plus-circle disabled"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right disabled"></p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="gate_img desired greed inactive">
+							<div id='desired_greed' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"></p>
+									<p class="gate_increment fas fa-plus-circle disabled"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right disabled"></p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="gate_img desired pride inactive">
+							<div id='desired_pride' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"></p>
+									<p class="gate_increment fas fa-plus-circle disabled"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right disabled"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+	
+				<div class="valid_stars">
+					<h3>How does your unit updated now?</h3>
+	
+					<div class="valid_stars_selectors stars_selectors">
+						<div class="gate_img valid envy inactive">
+							<div id='valid_envy' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"></p>
+									<p class="gate_increment fas fa-plus-circle disabled"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right disabled"></p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="gate_img valid sloth inactive">
+							<div id='valid_sloth' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"></p>
+									<p class="gate_increment fas fa-plus-circle disabled"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right disabled"></p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="gate_img valid lust inactive">
+							<div id='valid_lust' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"></p>
+									<p class="gate_increment fas fa-plus-circle disabled"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right disabled"></p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="gate_img valid gluttony inactive">
+							<div id='valid_gluttony' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"></p>
+									<p class="gate_increment fas fa-plus-circle disabled"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right disabled"></p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="gate_img valid wrath inactive">
+							<div id='valid_wrath' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"></p>
+									<p class="gate_increment fas fa-plus-circle disabled"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right disabled"></p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="gate_img valid greed inactive">
+							<div id='valid_greed' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"></p>
+									<p class="gate_increment fas fa-plus-circle disabled"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right disabled"></p>
+								</div>
+							</div>
+						</div>
+	
+						<div class="gate_img valid pride inactive">
+							<div id='valid_pride' class="gate_stars not_opened"></div>
+							<div class="gate-buttons">
+								<div class='gate-buttons_wrapper'>
+									<p class="gate_to_zero fas fa-chevron-circle-left disabled"></p>
+									<p class="gate_decrement fas fa-minus-circle disabled"></p>
+									<p class="gate_increment fas fa-plus-circle disabled"></p>
+									<p class="gate_to_max fas fa-chevron-circle-right disabled"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<script src="scripts/script.js"></script>
+</body>
+</html>
